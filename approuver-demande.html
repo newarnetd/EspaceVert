@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approuver Demande d'Espace Vert</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Conteneur principal -->
+    <div class="container mt-5">
+        <!-- En-tête de la page -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="text-success">Approuver une Demande d'Espace Vert</h2>
+            <a href="gestion-demandeespace.html" class="btn btn-secondary">Retour à la gestion des demandes</a>
+        </div>
+
+        <!-- Tableau des demandes -->
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nom de l'utilisateur</th>
+                            <th>Email</th>
+                            <th>Type d'Espace</th>
+                            <th>Date de Demande</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Exemples de demandes -->
+                        <tr>
+                            <td>1</td>
+                            <td>Jean Dupont</td>
+                            <td>jean.dupont@example.com</td>
+                            <td>Parc public</td>
+                            <td>2024-12-15</td>
+                            <td>
+                                <a href="actions/approver-demande.php?id=1" class="btn btn-success btn-sm">Approuver</a>
+                                <a href="actions/rejeter-demande.php?id=1" class="btn btn-danger btn-sm">Rejeter</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Marie Leblanc</td>
+                            <td>marie.leblanc@example.com</td>
+                            <td>Jardin communautaire</td>
+                            <td>2024-12-16</td>
+                            <td>
+                                <a href="actions/approver-demande.php?id=2" class="btn btn-success btn-sm">Approuver</a>
+                                <a href="actions/rejeter-demande.php?id=2" class="btn btn-danger btn-sm">Rejeter</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

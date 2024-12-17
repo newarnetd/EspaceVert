@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
+  }
+}
+
+
+
+projet-espaces-verts/
+├── index.html                # Page d'accueil
+├── login.html                # Page de connexion
+├── dashboard.php             # Tableau de bord administrateur
+├── demande.php               # Formulaire pour soumettre une demande
+├── gestion-utilisateurs.php  # Gestion des utilisateurs
+├── css/
+│   └── style.css             # Styles CSS
+├── js/
+│   └── script.js             # Scripts JavaScript
+├── includes/
+│   ├── db.php                # Connexion à la base de données
+│   ├── header.php            # En-tête réutilisable
+│   └── footer.php            # Pied de page réutilisable
+├── actions/
+│   ├── traiter-demande.php   # Soumettre une demande
+│   ├── approuver-demande.php # Approuver/refuser une demande
+│   ├── gerer-utilisateur.php # Ajouter/modifier un utilisateur
+└── sql/
+    └── espaces_verts.sql     # Fichier SQL pour la base de données
